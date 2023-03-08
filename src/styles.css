@@ -1,0 +1,40 @@
+:root {
+    --number-of-columns: 4;
+}
+
+.wrapper {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--number-of-columns), 1fr);
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.false {
+    opacity: 0.6;
+}
