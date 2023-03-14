@@ -15,12 +15,10 @@ const filtersSlice = createSlice({
     initialState,
     reducers: {
         changer: (state, action) => {
-            console.log(action)
-            state[action.payload] = !state[action.payload]
+            state[action.payload] = !state[action.payload];
         },
         themeChanger: (state, action) => {
-            console.log(action)
-            state.theme = action.payload
+            state.theme = action.payload;
         }
     }
 })
@@ -28,5 +26,4 @@ const filtersSlice = createSlice({
 export const {changer, themeChanger} = filtersSlice.actions;
 
 export default filtersSlice.reducer;
-
-export const selectAllFilters = (state) => state.filters
+export const selectAllFilters = (state) => state.filters;

@@ -2,24 +2,32 @@
     --number-of-columns: 4;
 }
 
+.sidebar {
+    position: absolute;
+    z-index: 10;
+}
+
 .wrapper {
     width: 500px;
     height: auto;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(var(--number-of-columns), 1fr);
+    position: relative;
+    z-index: 5;
+}
+
+.figure {
+    height: 100px;
+    width: 100px;
 }
 
 .circle {
-    height: 100px;
-    width: 100px;
     border-radius: 50%;
     margin: 0;
 }
 
 .square {
-    height: 100px;
-    width: 100px;
     margin: 0;
 }
 
@@ -35,6 +43,6 @@
 .green {
     background-color: green;
 }
-.false {
+.light {
     opacity: 0.6;
 }

@@ -1,14 +1,12 @@
 import React from 'react';
-//import { useSelector } from 'react-redux';
 import './styles.css';
-
-import { ControlPanel } from './features/components/ControlPanel';
+import { SideMenu } from './features/components/SideMenu';
 import { FiguresList } from './features/components/FiguresList';
 
 function App() {
   return (
     <div>
-      <ControlPanel/>
+      <SideMenu/>
       <FiguresList/>
     </div>
     )
